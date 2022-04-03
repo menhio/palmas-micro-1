@@ -3,11 +3,11 @@ Description=uWSGI instance to serve app
 After=network.target
 
 [Service]
-User=sammy
+User=admin
 Group=www-data
-WorkingDirectory=/home/admin/app
-Environment="PATH=/home/admin/app/env/bin"
-ExecStart=/home/adminy/app/env/bin/uwsgi --ini app.ini
+WorkingDirectory=/home/admin/palmas-micro-1
+Environment="PATH=/home/admin/palmas-micro-1/env/bin"
+ExecStart=/home/admin/palmas-micro-1/env/bin/uwsgi --ini app.ini
 
 [Install]
 WantedBy=multi-user.target
